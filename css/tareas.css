@@ -1,0 +1,115 @@
+:root {
+    --body: aquamarine ;
+    --colorPrincipal : #2ac5b3 ;
+    --colorSecundario: #219e90 ;
+    --colorTecerciario: #4effa7;
+    --blanco : rgb(255, 255, 255) ;
+    --correcto: rgba(15, 148, 15, 0.87);
+    --error:rgba(196, 74, 58, 0.897);
+    
+    
+}
+
+html {
+    box-sizing: inherit;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    background-color:var(--body);
+    margin: 0;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+.header {
+    width: 100%;
+    margin: 0;
+    background-color: aliceblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__fondo {
+    height: 300px;
+}
+
+.boton {
+    background-color: var(--body);
+    border-radius: .5rem;
+}
+
+.formulario{
+    /*margin: -5rem auto 0 auto;*/
+    background-color: var(--colorPrincipal);
+    display: grid;
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.campo {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    width: 70%;
+    justify-self: center;
+}
+.tareas {
+        background-color: var(--colorSecundario);
+        display: grid;
+        border-radius: 1rem;
+}
+
+
+@media (min-width:768px) {
+.tareas {
+    margin: 1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.campo__textarea {
+    margin: 5px;
+    width: 300px;
+    height: 100px;
+} 
+}
+
+
+.error {
+    background-color: var(--error) ;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: .5rem ;
+    color: var(--blanco);
+}
+
+.correcto {
+    background-color: var(--correcto);
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    color: var(--blanco);
+}
+
+/* Este es el estilo que se aplicará cuando le den clic al input */
+.input-completado-activo {
+    background-color:var(--correcto); /* Color verde */
+    color: white;              /* Letras blancas */
+    border: 1px solid #1e7e34; /* Borde verde más oscuro */
+    font-weight: bold;         /* Texto en negrita opcional */
+    transition: background-color 0.3s ease; /* Hace que el cambio de color sea suave */
+}
+
+.pie{
+    text-align: center;
+    margin: 0;
+    padding: 1px;
+    background-color: var(--colorTecerciario);
+}
