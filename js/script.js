@@ -88,6 +88,7 @@ function renderizarTareas(){
         lista.appendChild(div);
         //* PARRAFO Y SE LE ASIGNA EL VALOR 
         const parrafo=document.createElement ('P');
+        parrafo.classList.add('parrafo__tarea')
         parrafo.textContent = tarea.texto;
         div.appendChild(parrafo);
         //* BOTON COMPLETADO

@@ -346,8 +346,26 @@ h1,h2,h3{
 .input-completado-activo {
     background-color:var(--correcto); /* Color verde */
     color: white;              /* Letras blancas */
-    border: 1px solid #1e7e34; /* Borde verde más oscuro */
+    border: 1px solid var(--correcto); /* Borde verde más oscuro */
     font-weight: bold;         /* Texto en negrita opcional */
     transition: background-color 0.3s ease; /* Hace que el cambio de color sea suave */
 }
-
+.tarea {
+  background-color: #2d191b;
+  border-radius: 10px;
+}
+.parrafo__tarea {
+  margin:  1rem ;
+  color: var(--text-main);
+}
+.btn-completar , .btn-eliminar {
+  margin: 6px;
+  align-self: flex-start;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 14px;
+  color: #2a1305;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
