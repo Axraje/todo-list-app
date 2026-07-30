@@ -38,10 +38,10 @@ Built with **HTML5**, **CSS3**, and **Vanilla JavaScript**, without external fra
 
 ```mermaid
 flowchart TD
-    A[User Input] --> B[Form Submission]
-    B --> C["tasks[] (Application State)"]
-    C --> D[renderizarTareas()]
-    D --> E[DOM Update]
+    A["User Input"] --> B["Form Submission"]
+    B --> C["Application State (tasks[])"]
+    C --> D["Render Tasks"]
+    D --> E["Update DOM"]
 ```
 ---
 
