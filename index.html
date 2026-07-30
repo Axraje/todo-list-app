@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="profile">
+      <div class="avatar">
+        <img class="avatar__imagen" src="img/user.png" alt="Foto de perfil">
+      </div>
+      <div>
+        <p class="role">Tareas JS</p>
+        <p class="name">Axel Alvarez</p>
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <p class="section-label">Main</p>
+      <nav class="nav">
+        <a href="#" class="nav-item active">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          </span>
+          <span class="label">Tareas</span>
+          <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <!--
+              <a href="#" class="nav-item">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg>
+          </span>
+          <span class="label">Pendientes</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M16 12h.01"/><path d="M2 10h20"/></svg>
+          </span>
+          <span class="label">Completadas</span>
+        </a>
+        
+        -->
+      </nav>
+    </div>
+</aside>
+
+<main class="main">
+  <section class="section">
+      <header class="titulo"> <h1>Lista de Tareas</h1></header>
+      <div class="contenido-tareas">
+          <form class="formulario" id="formulario">
+            <h2>Asignacion</h2>
+            <div class="campo">
+              <label class="campo__label" for="tarea">Agregar Tarea:</label>
+              <textarea class="campo__textarea" name="tarea" id="tarea" placeholder="Ingresa una Tarea"></textarea>
+            </div>
+            <div class="campo">
+              <input type="submit" value="Enviar" class="boton">
+            </div>
+          </form>
+
+          <div class="lista">
+            <h2>Tareas Asignadas</h2>
+            <div class="contenedor-tareas">
+            </div>
+          </div>
+
+      </div>
+  </section>
+</main>
+     <!--<footer class="footer"> <div class="pie"><p>Axel Alvarez 2027 </p></div></footer>  -->
+    <script src="js/script.js"> </script>
+</body>
+</html> 
